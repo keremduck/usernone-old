@@ -5,7 +5,7 @@ class Footer extends Component {
         return(
             <>
                 <footer>
-                    This website open-source on <a href="https://github.com/noneduck/usernone.me">github!</a>
+                    This website open-source on <a href="https://github.com/noneduck/usernone">github!</a>
                 </footer>
             </>
         )
