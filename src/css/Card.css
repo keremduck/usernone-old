@@ -1,0 +1,13 @@
+.card{
+    width: 150px;
+    height: 200px;
+    background-color: #222330;
+    float:left;
+    margin-left:25px;
+    margin-top: 20px;
+    
+}
+.card-img-top{
+    width: 80px;
+    height: 80px;
+}

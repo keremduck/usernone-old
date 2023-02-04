@@ -1,0 +1,9 @@
+#card{
+    width: 340px;
+    height: 200px;
+    background-color: #222330;
+    margin-top:20px;
+}
+.card-link{
+    float:right;
+}
