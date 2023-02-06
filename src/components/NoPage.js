@@ -1,8 +1,6 @@
-import React, { Component } from 'react'
 import {Oval} from "react-loader-spinner";
 
-export default class NoPage extends Component {
-  render() {
+export default function NoPage(){
     const text = {
             fontSize: "150px",
             textAlign: "center",
@@ -11,7 +9,6 @@ export default class NoPage extends Component {
         fontSize: "20px",
         textAlign: "center",
     }
-
     return (
         <>
             <div className={"row","loader hidden"}>
@@ -30,5 +27,4 @@ export default class NoPage extends Component {
         </div>
         </>
     )
-  }
 }

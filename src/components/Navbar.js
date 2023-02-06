@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
 import '../css/Navbar.css'
 
-class Navbar extends Component {
-  render() {
+export default function Navbar() {
     return (
         <div>
         <nav className="justify-content-between navbar navbar-expand-lg navbar-dark">
@@ -23,7 +21,4 @@ class Navbar extends Component {
 </nav>
 </div>
     )
-  }
 }
-
-export default Navbar;

@@ -1,12 +1,9 @@
-import React, { Component } from 'react'
 import { Oval } from 'react-loader-spinner'
 import Github from '../api/Github'
-export default class Projects extends Component {
-  render() {
+export default function Projects() {
     return (
-        <div>
-
-        <title>None - Home Page</title>
+      <div>
+      <title>None - Home Page</title>
       <div className={"row","loader hidden"}>
       <Oval
       heigth="100"
@@ -25,8 +22,6 @@ export default class Projects extends Component {
       <hr className='hr'/>
       <h1 id="text2">projects</h1>
       <Github/>
-  
       </div> 
     )
-  }
 }

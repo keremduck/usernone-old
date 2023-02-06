@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
 import '../css/Home.css'
 import '../css/Loader.css'
 import {Oval} from 'react-loader-spinner'
 import Card from './Card';
 
-class Home extends Component {
-  render() {
+export default function Home() {
     return <div>
       <title>None - Home Page</title>
     <div className={"row","loader hidden"}>
@@ -30,7 +28,7 @@ class Home extends Component {
     </p>
     <center>
       <Card src="https://i.hizliresim.com/qk2h7ay.png" desc="I use ReactJS for 4 months"/>
-      <Card src="https://i.hizliresim.com/2t1w66b.png" desc="I use NodeJS for 1 years"/>
+      <Card src="https://i.hizliresim.com/2t1w66b.png" desc="I use NodeJS for 7 months"/>
       <Card src="https://i.hizliresim.com/7uptv1n.png" desc="I use MongoDB for 6 months"/>
       <Card src="https://i.hizliresim.com/mw62vg1." desc="I use NextJS for 2 months"/>
       <Card src="https://i.hizliresim.com/ipbg0j5.png" desc="I use Python for 1 months"/>
@@ -39,6 +37,4 @@ class Home extends Component {
 
     </div>  
   }
-}
 
-export default Home;
