@@ -14,7 +14,7 @@ export default function Home() {
     ariaLabel='loading'
   />
     </div>
-    <h1 id="text"><a href="https://discord.com/users/722901871001337968"><img src="https://cdn.discordapp.com/avatars/722901871001337968/09609854bdd661d39e25f53e7b9abf30.webp" align="right" className='rounded-circle'></img></a>none</h1>
+    <h1 id="text"><a href="https://discord.com/users/722901871001337968"><img src="https://cdn.discordapp.com/avatars/722901871001337968/a_72f71062aa8d2ba1132cb156e2da0e2f.gif" align="right" className='rounded-circle'></img></a>none</h1>
     <div className="word"></div>
     <br/>
     <div className="emojis">
