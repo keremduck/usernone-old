@@ -1,5 +1,7 @@
 import { Oval } from 'react-loader-spinner'
 import Github from '../api/Github'
+
+//lanyarddan pp çek
 export default function Projects() {
     return (
       <div>
