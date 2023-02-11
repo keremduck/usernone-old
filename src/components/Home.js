@@ -11,7 +11,6 @@ export default function Home() {
     const data = await response.json();
     const arr = await [data.data];
     await setData(arr);
-    console.log(arr)
   }
 
 
