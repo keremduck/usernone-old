@@ -1,8 +1,19 @@
 import { Oval } from 'react-loader-spinner'
 import Github from '../api/Github'
-
-//lanyarddan pp çek
+import { useEffect, useState } from 'react';
 export default function Projects() {
+  const [data, setData] = useState([]);
+  const getData = async () => {
+    const response = await fetch('https://api.lanyard.rest/v1/users/722901871001337968');
+    const data = await response.json();
+    const arr = await [data.data];
+    await setData(arr);
+  }
+
+
+  useEffect(() => {
+    getData();
+  },[])
     return (
       <div>
       <title>None - Home Page</title>
@@ -14,7 +25,9 @@ export default function Projects() {
       ariaLabel='loading'
     />
       </div>
-      <h1 id="text"><a href="https://discord.com/users/722901871001337968"><img src="https://cdn.discordapp.com/avatars/722901871001337968/a_72f71062aa8d2ba1132cb156e2da0e2f.gif" align="right" className='rounded-circle'></img></a>none</h1>
+      {data.map(item => {
+      return(<h1 id="text"><a href="https://discord.com/users/722901871001337968"><img src={"https://cdn.discordapp.com/avatars/722901871001337968/" + item.discord_user.avatar + ".gif"} align="right" className='rounded-circle'></img></a>{item.discord_user.username}</h1>)
+      })}
       <div className="word"></div>
       <br/>
       <div className="emojis">
