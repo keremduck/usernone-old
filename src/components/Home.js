@@ -30,7 +30,7 @@ export default function Home() {
   />
     </div>
     {data.map(item => {
-      return(<h1 id="text"><a href="https://discord.com/users/722901871001337968"><img src={"https://cdn.discordapp.com/avatars/722901871001337968/" + item.discord_user.avatar + ".gif"} align="right" className='rounded-circle'></img></a>{item.discord_user.username}</h1>)
+      return(<h1 id="text"><a href="https://discord.com/users/722901871001337968"><img src={"https://cdn.discordapp.com/avatars/722901871001337968/" + item.discord_user.avatar + ".png"} align="right" className='rounded-circle'></img></a>{item.discord_user.username}</h1>)
     })}
 
     <div className="word"></div>
